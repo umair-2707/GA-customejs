@@ -1,16 +1,16 @@
 name: 'Hello World'
 description: 'Greet someone and record the time'
+
 inputs:
-  who-to-greet: # id of greet
-    description: 'who to greet'
+  who-to-greet:
+    description: 'Who to greet'
     required: true
     default: 'world'
 
-output: 
-  time: # id of output
-    description: 'the time we greeted you'
+outputs:
+  time:
+    description: 'The time we greeted you'
 
 runs:
-  using: 'node20'
+  using: 'node12'  # Ensure this matches the version your action supports
   main: 'index.js'
-   
